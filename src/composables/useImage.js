@@ -15,13 +15,10 @@ export default function useImage(){
       uploadTask.on('state_changed',
         ()=>{},
         (err)=>console.log(err),
-        ()=>{
+        async ()=>{
 
-            getDownloadURL(uploadTask.snapshot.ref).then((DownloadURL)=>{
-
-                url.value =DownloadURL
-
-            })
+           const DownloadURL = await  getDownloadURL(uploadTask.snapshot.ref)
+            url.value =DownloadURL
         }
       )
     }
