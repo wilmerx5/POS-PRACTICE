@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
   import { addDoc, collection } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 import { useFirebaseStorage, useFirestore } from 'vuefire';
@@ -91,4 +91,8 @@ import { products } from '../../data/products';
             </div>
         </div>
   </div>
+</template> -->
+
+<template>
+  
 </template>
